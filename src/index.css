@@ -1,0 +1,269 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+body {
+  margin: 0;
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, div, a, li, td, th, input, button {
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.আপনার {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.d_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .d_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+.divOptions {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  border: 5px solid #f0f0f0;
+  width: 230px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+.divOptions:hover {
+  border: 5px solid #337ab7;
+}
+.divOptions .home_button {
+  background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+  line-height: 0.8;
+  width: 205px !important;
+}
+.stuType {
+  font-size: 16px;
+  color: #000000;
+  padding: 5px;
+}
+.divOptions3 {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+.just {
+  padding-bottom: 2rem !important;
+}
+
+.centerH1 {
+  margin: 1.4rem 0 0.8rem 0;
+}
+.selectt {
+  height: 25px;
+  background-color: #fff;
+  width: 30%;
+  border: 1px solid #99cc99;
+}
+.borderr {
+  border: 1px solid #99cc99;
+  border-radius: 5px;
+}
+.ttaable {
+  margin-left: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .selectt {
+    width: 50%;
+  }
+  .ttaable {
+    margin-left: -1rem;
+  }
+}
+@media (max-width: 740px) {
+  .centerH1 {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 666px) {
+  .selectt {
+    width: 60%;
+  }
+  .ttaable {
+    margin-left: -2rem;
+  }
+}
+@media (max-width: 450px) {
+  .selectt {
+    width: 60%;
+  }
+  .ttaable {
+    margin-left: -1rem;
+  }
+  .centerH1 {
+    font-size: 22px;
+  }
+}
+
+.slider_section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide-item {
+  text-align: center;
+  position: relative;
+}
+
+.slide-item img {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-item .meta {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slide-item .meta h1 {
+  margin-bottom: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 19px;
+  background: #333333c7;
+  padding: 0.5rem;
+}
+
+@media (max-width:767px){
+  .dgfghfhgh {
+    width: 80px;
+    padding-bottom: 1rem;
+  }
+  .dsdsrc {
+    width: 90%;
+    margin: auto;
+  }
+  .মন্তব্য {
+    margin-top: 1rem;
+  }
+  .menu_bar {
+    padding: 0.4rem;
+  }
+}
+.tab-content>.tab-pane {
+  max-height: fit-content !important;
+}
+
+
+.menu_bar .navbar-toggler {
+  border-color: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .5);
+  outline: 0 !important;
+}
+.navbar-nav li {
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_top_section {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.menu_bar {
+  background-color: #00b4d8;
+}
+.hvr-rectangle-out:before {
+  background: #00b4d8;
+}
+.custom_header {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.colorrr {
+  color: #0077b6 !important;
+}
+.colorrrr {
+  color: #0272af !important;
+}
+footer {
+  /* background:  #00b4d8; */
+  /* background: linear-gradient(358deg, #00b4d8, #00b4d8); */
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+footer .list-unstyled li a:hover {
+  color: white;
+}
+.our-team .social {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+
+}
+.our-team .picture::before {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.our-team .picture::after {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.divOptions .home_button {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.date-title a {
+  color: #026ba3 !important;
+}
+.btn-primary {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.event_list .title {
+  color: #0077b6;
+}
+.btn-info {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.menu_bar .navbar .dropdown-item {
+  color: #03669c;
+}
+.navbar .dropdown-item:hover {
+  background-image: linear-gradient(to right, #00b4d8, #0077b6);
+}
+.menu_bar .navbar .navbar-nav .nav-link:hover {
+  color: #03669c !important;
+}
+a {
+  color: #03669c;
+}
+.date-card .date-body .date-title, .date-card .datestamp .date-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+}
