@@ -975,12 +975,12 @@ const testimonialItems = [
             width="100%"
             height="350px"
           >
-            {/* <p>
+            <p>
               Click here to view{" "}
               <a href="https://nooraniboardctg.com/public/calendar11.pdf">
                 PDF File !
               </a>
-            </p> */}
+            </p>
           </object>
           <object
             data="https://nooraniboardctg.com/public/calendar22.pdf"
@@ -988,12 +988,12 @@ const testimonialItems = [
             width="100%"
             height="350px"
           >
-            {/* <p>
+            <p>
               Click here to view{" "}
               <a href="https://nooraniboardctg.com/public/calendar22.pdf">
                 PDF File !
               </a>
-            </p> */}
+            </p>
           </object>
         </div>
       </div>
