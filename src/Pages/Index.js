@@ -491,7 +491,7 @@ function Index() {
 
           <section className="mt-4">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-md-5 mb-4">
                 <div className="card chairman_card shadow-sm">
                   <h5 className="card-header custom_header">
                     <i className="fas fa-calendar-alt" /> মুয়াল্লিম প্রশিক্ষণ
@@ -955,7 +955,7 @@ function Index() {
               </ul> */}
                       
                       </div>
-  <div className="mt-4 video-container">
+  <div className="mt-4 mb-3 video-container">
   <iframe
     src="https://www.youtube.com/embed/9tNRc8gRFXs?si=ufP9AzdsvCSudpOW"
     title="YouTube video player"
