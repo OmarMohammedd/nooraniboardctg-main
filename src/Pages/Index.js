@@ -955,7 +955,7 @@ function Index() {
               </ul> */}
                       
                       </div>
-                      <div className="mt-4 mb-4 video-container">
+  <div className="mt-4 video-container">
   <iframe
     src="https://www.youtube.com/embed/9tNRc8gRFXs?si=ufP9AzdsvCSudpOW"
     title="YouTube video player"
@@ -966,14 +966,11 @@ function Index() {
   ></iframe>
 </div>
 
-                        {/* <div className="ratio ratio-16x9" style={{width:"100%"}}>
-  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
-</div> */}
                     </section>
                   </div>
                 </div>
               </div>
-
+              
               <div className="col-md-3 p-0 dsdsrc">
                 <div
                   className="card border-0"
@@ -1207,8 +1204,10 @@ function Index() {
                   </div>
                 </div>
               </div>
+
             </div>
           </section>
+
 
           {/* 
           <section class="mt-4">
