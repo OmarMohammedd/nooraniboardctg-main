@@ -13,6 +13,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Index() {
+
+  useEffect(() => {
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const cards = document.querySelectorAll('.card');
+          cards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('animate');
+          });
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const section = document.querySelector('.card-body');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   const options = {
     loop: true,
     autoplay: true,
@@ -342,148 +371,146 @@ function Index() {
                       </Link>
                     </span>
                   </h5>
-                  <div class="card-body p-2 scrollbar">
-                    <div class="overflow">
-                      <Link to="/notice/1m-samyik-preeksha-rutin-2023ing">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">15</span>
-                                <sup>th</sup> Mar
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  ১ম সাময়িক পরীক্ষা রুটিন: ২০২৪ইং{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/1443-hijree-trriteey-srenir-preekshar-rutin">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">24</span>
-                                <sup>th</sup> Jan
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  ১৪৪৫ হিজরী -তৃতীয় শ্রেণির পরীক্ষার রুটিন{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/hijree-1445-sner-ple-narsaree-prthm-oo-dwiteey-srenir-preekshar-rutin">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">24</span>
-                                <sup>th</sup> Jan
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  হিজরী ১৪৪৫ সনের -প্লে-নার্সারী, প্রথম ও
-                                  দ্বিতীয় শ্রেণির পরীক্ষার রুটিন
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/1443-hijree-preekshar-fi-sngkrant">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">23</span>
-                                <sup>rd</sup> Jan
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  ১৪৪৫ হিজরী পরীক্ষার ফি সংক্রান্ত{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/kendreey-snd-trriteey-preekshar-rutin">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">29</span>
-                                <sup>th</sup> Oct
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  কেন্দ্রীয় সনদ (তৃতীয়) পরীক্ষার রুটিন{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/2023-saler-ple-narsaree-prthm-oo-dwiteey-srenir-preekshar-rutin">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">28</span>
-                                <sup>th</sup> Oct
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  2023 সালের -প্লে-নার্সারী, প্রথম ও দ্বিতীয়
-                                  শ্রেণির পরীক্ষার রুটিন{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/onlaine-fi-prisodher-pddhti">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">05</span>
-                                <sup>th</sup> Sep
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  অনলাইনে ফি পরিশোধের পদ্ধতি{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link to="/notice/onlaine-bi-oo-shtesnaree-pnz-kryer-pddhti">
-                        <div class="card notice_card">
-                          <div class="card-body p-2">
-                            <div class="row ">
-                              <div class="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
-                                <span class="date">05</span>
-                                <sup>th</sup> Sep
-                              </div>
-                              <div class="col-lg-9 col-md-8 col-sm-9">
-                                <div class="title">
-                                  অনলাইনে বই ও ষ্টেশনারী পণ্য ক্রয়ের পদ্ধতি{" "}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
+         <div className="card-body p-2 scrollbar">
+      <div className="overflow">
+        <Link to="/notice/1m-samyik-preeksha-rutin-2023ing">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">15</span>
+                  <sup>th</sup> Mar
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    ১ম সাময়িক পরীক্ষা রুটিন: ২০২৪ইং{" "}
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/1443-hijree-trriteey-srenir-preekshar-rutin">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">24</span>
+                  <sup>th</sup> Jan
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    ১৪৪৫ হিজরী -তৃতীয় শ্রেণির পরীক্ষার রুটিন{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/hijree-1445-sner-ple-narsaree-prthm-oo-dwiteey-srenir-preekshar-rutin">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">24</span>
+                  <sup>th</sup> Jan
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    হিজরী ১৪৪৫ সনের -প্লে-নার্সারী, প্রথম ও দ্বিতীয় শ্রেণির পরীক্ষার রুটিন
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/1443-hijree-preekshar-fi-sngkrant">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">23</span>
+                  <sup>rd</sup> Jan
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    ১৪৪৫ হিজরী পরীক্ষার ফি সংক্রান্ত{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/kendreey-snd-trriteey-preekshar-rutin">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">29</span>
+                  <sup>th</sup> Oct
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    কেন্দ্রীয় সনদ (তৃতীয়) পরীক্ষার রুটিন{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/2023-saler-ple-narsaree-prthm-oo-dwiteey-srenir-preekshar-rutin">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">28</span>
+                  <sup>th</sup> Oct
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    2023 সালের -প্লে-নার্সারী, প্রথম ও দ্বিতীয় শ্রেণির পরীক্ষার রুটিন{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/onlaine-fi-prisodher-pddhti">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">05</span>
+                  <sup>th</sup> Sep
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    অনলাইনে ফি পরিশোধের পদ্ধতি{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/notice/onlaine-bi-oo-shtesnaree-pnz-kryer-pddhti">
+          <div className="card notice_card">
+            <div className="card-body p-2">
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-3 border-right text-center m-auto cursive_font line_height_1">
+                  <span className="date">05</span>
+                  <sup>th</sup> Sep
+                </div>
+                <div className="col-lg-9 col-md-8 col-sm-9">
+                  <div className="title">
+                    অনলাইনে বই ও ষ্টেশনারী পণ্য ক্রয়ের পদ্ধতি{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
                 </div>
               </div>
             </div>
