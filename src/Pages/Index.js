@@ -955,7 +955,8 @@ function Index() {
               </ul> */}
                       
                       </div>
-  <div className="mt-4 mb-3 video-container">
+        <h4 className="title_vidos">Videos</h4>
+  <div className="mt-3 video-container">
   <iframe
     src="https://www.youtube.com/embed/9tNRc8gRFXs?si=ufP9AzdsvCSudpOW"
     title="YouTube video player"
@@ -965,6 +966,30 @@ function Index() {
     allowfullscreen
   ></iframe>
 </div>
+<div className="mt-3 video-container">
+  <iframe
+    src="https://www.youtube.com/embed/VxmkxRs9UDs?si=8dygQLelxTEOhkM6"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+<div className="mt-3 mb-3 video-container">
+  <iframe
+    src="https://www.youtube.com/embed/k3S041g4UhQ?si=5g-7wJPkRTyJTyOR"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
+<Link to="/videos">
+<button className="btn-primary buttoonn">More</button>
+</Link>
 
                     </section>
                   </div>

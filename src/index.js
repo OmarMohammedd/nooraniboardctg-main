@@ -91,6 +91,7 @@ import ResetPassword from './Pages/ResetPassword';
 
 
 import Application from './Pages/Application';
+import Videos from './Pages/Videos';
 
 
 const router = createBrowserRouter([
@@ -416,6 +417,10 @@ const router = createBrowserRouter([
   {
     path: "syllabus/class-3",
     element: <Class33 />,
+  },
+  {
+    path: "videos",
+    element: <Videos />,
   },
 ]);
 
