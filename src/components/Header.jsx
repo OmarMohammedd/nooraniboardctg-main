@@ -2,6 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+
+import OwlCarousel from "react-owl-carousel2";
+import "react-owl-carousel2/src/owl.carousel.css";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +27,19 @@ function Header() {
       document.body.removeChild(script);
     };
   }, []);
+
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+  };
+
 
   return (
     <header style={{ marginBottom: "1.2rem" }}>
@@ -469,12 +490,15 @@ function Header() {
             <div className="col-md-10 col-lg-11 col-10 pl-md-4 py-1">
               <div className="breaking-box">
                 <div
-                  id="carouselbreaking"
-                  className="carousel slide"
-                  data-ride="carousel"
+                  id=""
+                  className=""
+                  data-ride=""
                 >
-                  <div className="carousel-inner">
-                    <div className="carousel-item">
+                  <div className="carousel-inner"
+                   style={{textAlign:"left"}}
+                  >
+                    <Slider {...settings}>
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/1m-samyik-preeksha-rutin-2023ing"
@@ -482,7 +506,7 @@ function Header() {
                         ১ম সাময়িক পরীক্ষা রুটিন: ২০২৪ইং
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/1443-hijree-trriteey-srenir-preekshar-rutin"
@@ -490,7 +514,7 @@ function Header() {
                         ১৪৪৫ হিজরী -তৃতীয় শ্রেণির পরীক্ষার রুটিন
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/hijree-1445-sner-ple-narsaree-prthm-oo-dwiteey-srenir-preekshar-rutin"
@@ -499,7 +523,7 @@ function Header() {
                         পরীক্ষার রুটিন
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/1443-hijree-preekshar-fi-sngkrant"
@@ -507,7 +531,7 @@ function Header() {
                         ১৪৪৫ হিজরী পরীক্ষার ফি সংক্রান্ত
                       </Link>
                     </div>
-                    <div className="carousel-item active">
+                    <div className="carousel-item active ">
                       <Link
                         className="colorrr"
                         to="/notice/kendreey-snd-trriteey-preekshar-rutin"
@@ -515,12 +539,12 @@ function Header() {
                         কেন্দ্রীয় সনদ (তৃতীয়) পরীক্ষার রুটিন
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link className="colorrr" to="/notice/onlaine-fi-prisodher-pddhti">
                         অনলাইনে ফি পরিশোধের পদ্ধতি
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/onlaine-bi-oo-shtesnaree-pnz-kryer-pddhti"
@@ -528,7 +552,7 @@ function Header() {
                         অনলাইনে বই ও ষ্টেশনারী পণ্য ক্রয়ের পদ্ধতি
                       </Link>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item ">
                       <Link
                         className="colorrr"
                         to="/notice/kendreey-snd-preeksha-2023-er-cithi"
@@ -536,9 +560,11 @@ function Header() {
                         কেন্দ্রীয় সনদ পরীক্ষা- ২০২৩ এর চিঠি
                       </Link>
                     </div>
-                  </div>
+                    </Slider>
 
-                  <div className="navigation-box p-2 d-none d-sm-block">
+
+
+                    {/* <div className="navigation-box p-2 d-none d-sm-block">
                     <Link
                       className="carousel-control-prev text-primary"
                       to="#carouselbreaking"
@@ -558,7 +584,12 @@ function Header() {
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                       <span className="sr-only">Next</span>
                     </Link>
+                  </div> */}
+
+
                   </div>
+
+                
                 </div>
               </div>
             </div>
