@@ -87,6 +87,7 @@ import PurskarBO from './Pages/event/PurskarBO';
 import PurskarBS from './Pages/event/PurskarBS';
 import SerpurK from './Pages/event/SerpurK';
 import ResetPassword from './Pages/ResetPassword';
+import AdmissionRegistration from './Pages/Admission/AdmissionRegistration';
 
 
 
@@ -421,6 +422,10 @@ const router = createBrowserRouter([
   {
     path: "videos",
     element: <Videos />,
+  },
+  {
+    path: "admission-registration",
+    element: <AdmissionRegistration />,
   },
 ]);
 
