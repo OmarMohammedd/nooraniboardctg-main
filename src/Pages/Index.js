@@ -520,10 +520,10 @@ function Index() {
             <div className="row">
               <div className="col-md-5 mb-4">
                 <div className="card chairman_card shadow-sm">
-                  {/* <h5 className="card-header custom_header">
+                  <h5 className="card-header custom_header">
                     <i className="fas fa-calendar-alt" /> মুয়াল্লিম প্রশিক্ষণ
                     সময়সূচি
-                  </h5> */}
+                  </h5>
                   <div className="card-body p-0 d-inline-block">
                     <section className="slider_section">
                       <div className="flexslider_training left">
