@@ -362,7 +362,7 @@ function Index() {
               </div>
 
               <div class="col-md-4 col-12">
-                <div class="card custom_card shadow-sm">
+                <div class="card carddddd custom_card shadow-sm">
                   <h5 class="card-header custom_header">
                     <i class="fas fa-thumbtack"></i> নোটিশ{" "}
                     <span class="float-right right_header">
@@ -371,7 +371,7 @@ function Index() {
                       </Link>
                     </span>
                   </h5>
-         <div className="card-body p-2 scrollbar">
+<div className="card-body p-2 scrollbar">
       <div className="overflow">
         <Link to="/notice/1m-samyik-preeksha-rutin-2023ing">
           <div className="card notice_card">

@@ -239,13 +239,13 @@ code {
   }
 }
 
-.card {
+.carddddd {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.card.animate {
+.carddddd.animate {
   animation: slideUp 0.5s ease-out forwards;
 }
 
