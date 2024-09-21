@@ -88,11 +88,13 @@ import PurskarBS from './Pages/event/PurskarBS';
 import SerpurK from './Pages/event/SerpurK';
 import ResetPassword from './Pages/ResetPassword';
 import AdmissionRegistration from './Pages/Admission/AdmissionRegistration';
+import AdmissionRegistrationn from './Pages/Admission/AdmissionRegistrationn';
 
 
 
 import Application from './Pages/Application';
 import Videos from './Pages/Videos';
+import TypeNew from './Pages/typeNew/TypeNew';
 
 
 const router = createBrowserRouter([
@@ -426,6 +428,14 @@ const router = createBrowserRouter([
   {
     path: "admission-registration",
     element: <AdmissionRegistration />,
+  },
+  {
+    path: "admission-registrationn",
+    element: <AdmissionRegistrationn />,
+  },
+  {
+    path: "typeNew",
+    element: <TypeNew />,
   },
 ]);
 

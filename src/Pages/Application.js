@@ -29,7 +29,7 @@ function Application() {
 
           <div className="d_flex">
 
-<Link to="/admission-registration">
+<Link to="/typeNew">
 <div className="divOptions">
               <div
                 className="text-center"
@@ -53,7 +53,7 @@ function Application() {
             </div>
 </Link>
             
-<Link to="/admission-registration">
+<Link to="/typeNew">
             <div className="divOptions">
               <div
                 className="text-center"
@@ -79,7 +79,7 @@ function Application() {
           </div>
 
           <div className="clearfix" />
-          <Link to="/admission-registration">
+          <Link to="/typeNew">
           <div className="divOptions divOptions3">
             <div className="text-center" style={{ padding: "5px 0px 0px 0px" }}>
               <div className="stuType" style={{ paddingTop: 5 }}>
