@@ -53,7 +53,7 @@ function Application() {
             </div>
 </Link>
             
-<Link to="/typeNew">
+<Link to="/login-form">
             <div className="divOptions">
               <div
                 className="text-center"
@@ -79,7 +79,7 @@ function Application() {
           </div>
 
           <div className="clearfix" />
-          <Link to="/typeNew">
+          <Link to="/login-Formm">
           <div className="divOptions divOptions3">
             <div className="text-center" style={{ padding: "5px 0px 0px 0px" }}>
               <div className="stuType" style={{ paddingTop: 5 }}>

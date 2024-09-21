@@ -95,6 +95,8 @@ import AdmissionRegistrationn from './Pages/Admission/AdmissionRegistrationn';
 import Application from './Pages/Application';
 import Videos from './Pages/Videos';
 import TypeNew from './Pages/typeNew/TypeNew';
+import LoginForm from './Pages/loginform/LoginForm';
+import LloginForm from './Pages/loginform/LloginForm';
 
 
 const router = createBrowserRouter([
@@ -436,6 +438,14 @@ const router = createBrowserRouter([
   {
     path: "typeNew",
     element: <TypeNew />,
+  },
+  {
+    path: "login-Form",
+    element: <LoginForm />,
+  },
+  {
+    path: "login-Formm",
+    element: <LloginForm />,
   },
 ]);
 
