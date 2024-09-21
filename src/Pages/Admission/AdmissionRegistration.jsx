@@ -828,8 +828,6 @@ function AdmissionRegistration() {
                 name="btnSubmit"
                 type="button"
                 className="btn btn-primary"
-                onclick="frmSubmit(this)"
-                disabled="disabled"
               >
                 Submit
               </button>
